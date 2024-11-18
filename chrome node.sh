@@ -11,23 +11,6 @@ CYAN='\033[0;36m'
 WHITE='\033[1;37m'
 RESET='\033[0m' # Reset color
 
-# Print "CRYPTO CONSOLE" with vibrant colors
-echo -e "${CYAN}=============================="
-echo -e "  ${GREEN}TitusCripto | HODL${CYAN}  "
-echo -e "${CYAN}==============================${RESET}"
-
-# Your script code goes here
-
-
-# Ask the user to follow on Youtube
-echo "Please follow us at: https://www.youtube.com/@TitusCripto"
-read -p "Have you followed us? (yes/no): " followed
-
-if [[ "$followed" != "yes" ]]; then
-    echo "Please follow us and run the script again."
-    exit 1
-fi
-
 echo "Updating VPS..."
 sudo apt-get update && sudo apt-get upgrade -y
 
